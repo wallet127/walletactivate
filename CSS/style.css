@@ -1,0 +1,163 @@
+:root {
+  --primary-font-color: black !important;
+  --primary-background: #f9f9f9 !important;
+  --button-text: #fff !important;
+  --button-background: black !important;
+}
+
+body {
+  font-family: Arvo;
+}
+
+.bg-cnt {
+  background-color: #f9f9f9;
+  /* width: 75%; */
+  width: 100%;
+}
+.margin-tup {
+  margin-top: 3rem !important;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hov {
+  text-decoration: none;
+  color: black;
+}
+.hov:hover {
+  font-weight: bold;
+  text-decoration: none !important;
+  color: black;
+}
+.select-file {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  border: 1px dashed #697399;
+  border-radius: 4px;
+  padding-top: 10px;
+  padding-left: 16px;
+  padding-right: 16px;
+  cursor: pointer;
+  text-align: center;
+  transition: all 0.2s ease-in-out;
+  margin-bottom: 20px;
+  position: relative;
+  box-sizing: border-box;
+  font-size: 17px;
+  color: #565656;
+}
+.select-file:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.m-a {
+  margin: auto auto;
+}
+.bold {
+  font-weight: bold;
+}
+.black {
+  color: var(--button-text);
+  background-color: var(--button-background);
+}
+.sub:hover {
+  background-color: var(--button-text);
+  color: var(--button-background);
+  border: 1px solid black;
+  font-weight: bold;
+}
+.green {
+  color: #41ccb4 !important;
+}
+.bg-black {
+  background-color: var(--button-background);
+  color: var(--button-text);
+}
+.form-control:focus {
+  background-color: var(--button-background);
+  color: var(--button-text);
+  border-color: --button-text;
+  outline: 0;
+  box-shadow: none;
+}
+.h-50 {
+  height: 50px !important;
+}
+.h-70 {
+  height: 70px !important;
+}
+.admin {
+  padding: 1em 1em;
+  background-color: black;
+  color: white;
+}
+/* .errImg{
+    position: relative;
+    left: 43em;
+    top: -2.3em;
+} */
+.form-ctr {
+  margin-bottom: 30px;
+  position: relative;
+}
+.form-ctr img {
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 8em;
+  height: 20px;
+}
+.form-ctr.error img {
+  opacity: 1;
+}
+.form-ctr.error input {
+  border-color: hsl(0, 100%, 74%);
+  color: hsl(0, 100%, 74%);
+}
+.form-ctr.error input ::placeholder {
+  color: hsl(0, 100%, 74%);
+}
+.form-ctr small {
+  text-align: right;
+  position: absolute;
+  bottom: -24px;
+  opacity: 0;
+  right: 8em;
+  color: hsl(0, 100%, 74%);
+  font-weight: 600;
+}
+.upload {
+  font-size: 1em;
+  color: hsl(0, 100%, 74%);
+  font-weight: 600;
+}
+
+.centralize {
+  display: flex;
+  justify-content: center;
+}
+@media only screen and (max-width: 600px) {
+  .form-ctr small {
+    right: 3em;
+  }
+  .form-ctr img {
+    right: 3em;
+  }
+}
+
+/* Verifcation Styling starts here */
+.admin a {
+  color: #41ccb4;
+}
+
+.admin a:hover {
+  color: #ccc;
+}
+.m-a {
+  margin: 8px auto;
+}
+
+/* Verfication styling ends here */
